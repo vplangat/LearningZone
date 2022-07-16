@@ -1,0 +1,29 @@
+{% extends 'www/base.html' %}
+{% load static %}
+{% block title %} Biscard CRM {% endblock %}
+
+{% block navbar %}
+    {% include 'www/navbar.html' %}
+
+    {% include 'www/slider.html' %}
+{% endblock %}
+
+{% block content %}
+    <!--CTA-->
+    <div class="container py-5 mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 pb-4">
+          <h1 class="display-4 font-weight-bold">Elevate your listening</h1>
+          <h5>Everyday headphones that make your favorite artists sound like their performing a never-ending encore.</h5>
+          <a class="btn btn-primary mt-2" href="/products">FIND YOUR SET</a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <img class="img-fluid rounded" src="{% static 'img/logo.png' %}" alt="Logo" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'www/footer.html' %}
+{% endblock %}
